@@ -810,9 +810,14 @@ namespace MudBlazor
                     if (Open)
                     {
                         if (SelectValueOnTab)
+                        {
                             await OnEnterKeyAsync();
+                        }
+                        else
+                        {
+                            await CloseMenuAsync();
+                        }
                     }
-                    await CloseMenuAsync();
                     break;
                 case "ArrowDown":
                     if (Open)
