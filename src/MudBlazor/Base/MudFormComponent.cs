@@ -669,7 +669,7 @@ namespace MudBlazor
         /// When using an <see cref="EditForm"/>, gets a context used to perform validation.
         /// </remarks>
         [CascadingParameter]
-        private EditContext? EditContext { get; set; } = default!;
+        protected EditContext? EditContext { get; set; } = default!;
 
         /// <summary>
         /// Triggers field to be validated.
